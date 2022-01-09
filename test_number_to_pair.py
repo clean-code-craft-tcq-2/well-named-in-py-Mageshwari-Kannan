@@ -1,4 +1,4 @@
-
+impoort get_color_from_pair_number
 
 def test_number_to_pair(pair_number,
                         expected_major_color, expected_minor_color):
