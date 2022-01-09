@@ -1,4 +1,4 @@
-
+import main
 
 def get_pair_number_from_color(major_color, minor_color):
   try:
