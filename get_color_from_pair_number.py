@@ -1,5 +1,5 @@
-import main
-
+MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
+MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
 
 def get_color_from_pair_number(pair_number):
   zero_based_pair_number = pair_number - 1
