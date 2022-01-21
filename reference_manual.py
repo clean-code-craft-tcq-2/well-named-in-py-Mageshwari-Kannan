@@ -4,7 +4,7 @@ from test_number_to_pair import *
 from test_pair_to_number import *
 from color_pair_to_string import *
 
-def Reference_manual():
+def reference_manual():
     refman_rows = []
     refman_columns = ["Pair_number","MajorColor" ,"MajorColor","MinorColor" ,"MinorColor"]
     refman_text = []
