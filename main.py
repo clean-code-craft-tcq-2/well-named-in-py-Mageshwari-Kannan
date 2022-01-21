@@ -3,7 +3,7 @@ import get_pair_number_from_color
 import test_number_to_pair
 import test_pair_to_number
 import color_pair_to_string
-from reference_manual import reference_manual
+import reference_manual
 
 if __name__ == '__main__':
   test_number_to_pair.test_number_to_pair(4, 'White', 'Brown')
