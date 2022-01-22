@@ -3,6 +3,8 @@ from get_pair_number_from_color import *
 from test_number_to_pair import *
 from test_pair_to_number import *
 from color_pair_to_string import *
+from color_pair_to_string import MAJOR_COLORS
+from color_pair_to_string import MINOR_COLORS
 
 def reference_manual():
     
