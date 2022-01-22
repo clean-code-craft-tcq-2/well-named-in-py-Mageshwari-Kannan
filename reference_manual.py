@@ -8,6 +8,6 @@ from color_pair_to_string import MINOR_COLORS
 
 def reference_manual():
     
-    for i, major in enumerate(major_colors):
-        for j, minor in enumerate(minor_colors):
+    for i, major in enumerate(MAJOR_COLORS):
+        for j, minor in enumerate(MINOR_COLORS):
             print(f'{i * 5 + j} | {major} | {minor}')
