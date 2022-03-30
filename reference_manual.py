@@ -13,17 +13,16 @@ def reference_manual():
     color_pair_colors = []
     color_pair_columns = ["ColorCode","MajorColor_Name","MajorColor","MinorColor_Name","MinorColor"]
 
-    for majorColor in MAJOR_COLORS:
-        for minorColor in MINOR_COLORS:
-            colorCode = get_pair_number_from_color(majorColor,minorColor)
-            print("ColorCode: ",colorCode,"- MajorColor: "+majorColor," ; MinorColor: "+minorColor)
+    for major_color in MAJOR_COLORS:
+        for minor_Color in MINOR_COLORS:
+            colorcode = get_pair_number_from_color(major_color,minor_color)
+            print("ColorCode: ",colorCode,"- MajorColor: "+major_color," ; MinorColor: "+minor_color)
             color_pair_rows.append(colorCode)
-            color_pair_text.append([str(colorCode), majorColor,"",minorColor,""])
-            if(minorColor =="Slate"): minorColor = "slategrey"
-            color_pair_colors.append(['White',"White",majorColor,"White",minorColor])
+            color_pair_text.append([str(colorCode), major_color,"",minor_color,""])
+            if(minor_color =="Slate"): minor_color = "slategrey"
+            color_pair_colors.append(['White',"White",major_color,"White",minor_color])
 
-    colorPair, colorPair_Axes = plt.subplots(figsize = (6,8),)
-
+    colorPair, colorPair_Axes = plt.subplots(figsize = (8,10),)
     colorPair_Axes.xaxis.set_visible(False) 
     colorPair_Axes.yaxis.set_visible(False)
 
