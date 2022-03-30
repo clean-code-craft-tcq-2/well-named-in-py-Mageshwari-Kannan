@@ -14,15 +14,16 @@ def reference_manual():
     color_pair_columns = ["ColorCode","MajorColor_Name","MajorColor","MinorColor_Name","MinorColor"]
 
     for major_color in MAJOR_COLORS:
-        for minor_Color in MINOR_COLORS:
+        for minor_color in MINOR_COLORS:
             colorcode = get_pair_number_from_color(major_color,minor_color)
-            print("ColorCode: ",colorCode,"- MajorColor: "+major_color," ; MinorColor: "+minor_color)
-            color_pair_rows.append(colorCode)
-            color_pair_text.append([str(colorCode), major_color,"",minor_color,""])
+            print("ColorCode: ",colorcode,"- MajorColor: "+major_color," ; MinorColor: "+minor_color)
+            color_pair_rows.append(colorcode)
+            color_pair_text.append([str(colorcode), major_color,"",minor_color,""])
             if(minor_color =="Slate"): minor_color = "slategrey"
             color_pair_colors.append(['White',"White",major_color,"White",minor_color])
 
-    colorPair, colorPair_Axes = plt.subplots(figsize = (8,10),)
+    colorPair, colorPair_Axes = plt.subplots(figsize = (6,8),)
+
     colorPair_Axes.xaxis.set_visible(False) 
     colorPair_Axes.yaxis.set_visible(False)
 
